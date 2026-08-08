@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -12,11 +12,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2325D366'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%230a0a0a' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
 
-<!-- ============================================================
-     META PIXEL — ID 1568239834683450
-     PageView dispara automaticamente. InitiateCheckout é disparado
-     pelo script.js embutido no clique do botão final de compra.
-     ============================================================ -->
+<!-- META PIXEL — ID 1568239834683450 -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -32,17 +28,12 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
 /></noscript>
-<!-- ============ FIM META PIXEL (head) ============ -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* ==========================================================================
-   RENDA EXTRA PELO CELULAR — QUIZ + VSL + OFERTA (single file)
-   Dark mode: fundo #0a0a0a, cards #161616, CTA verde neon #25D366
-   ========================================================================== */
 :root{
   --bg:#0a0a0a;
   --card:#161616;
@@ -80,12 +71,10 @@ a{color:inherit;text-decoration:none;}
 .wrap{max-width:560px;margin:0 auto;padding:0 20px;}
 .hidden{display:none!important;}
 
-/* ============ STAGES ============ */
 .stage{min-height:100vh;width:100%;padding:32px 0 40px 0;}
 .fade-in{animation:fadeIn .5s ease both;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
 
-/* ============ QUIZ ============ */
 #stageQuiz{display:flex;flex-direction:column;justify-content:center;}
 .quiz-eyebrow{
   display:inline-flex;align-items:center;gap:6px;
@@ -129,7 +118,6 @@ a{color:inherit;text-decoration:none;}
 }
 .quiz-option.selected::after{content:" ✓";color:var(--green);font-weight:800;}
 
-/* ============ LOADING ============ */
 #stageLoading{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
 .loading-spinner{
   width:52px;height:52px;border-radius:50%;
@@ -154,7 +142,6 @@ a{color:inherit;text-decoration:none;}
 }
 .loading-note{font-size:12.5px;color:var(--gray-faint);margin-top:16px;}
 
-/* ============ SALES (VSL + OFERTA) ============ */
 #stageSales{display:none;}
 .sales-eyebrow{
   display:block;text-align:center;
@@ -202,7 +189,6 @@ a{color:inherit;text-decoration:none;}
 
 .video-caption{font-size:12px;color:var(--gray-faint);text-align:center;margin-top:12px;}
 
-/* ---- offer section (hidden until timer) ---- */
 #offerSection{
   display:none;
   margin-top:34px;
@@ -257,7 +243,6 @@ a{color:inherit;text-decoration:none;}
   font-size:12.5px;color:var(--gray-faint);
 }
 
-/* countdown-until-unlock note (shown while offer still hidden) */
 #unlockNote{
   text-align:center;margin-top:26px;
   font-size:13px;color:var(--gray-faint);
@@ -265,7 +250,6 @@ a{color:inherit;text-decoration:none;}
 #unlockNote.gone{display:none;}
 #unlockNote strong{color:var(--green);font-family:var(--font-display);}
 
-/* ============ FOOTER ============ */
 .site-footer{
   border-top:1px solid var(--card-border);
   padding:30px 0 90px 0;margin-top:40px;
@@ -280,17 +264,11 @@ a{color:inherit;text-decoration:none;}
 </head>
 <body>
 
-<!-- ============================================================
-     META PIXEL — NOSCRIPT (logo após abrir o BODY)
-     ============================================================ -->
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
 /></noscript>
-<!-- ============ FIM META PIXEL (body) ============ -->
 
-<!-- ============================================================
-     ETAPA 1 — QUIZ DE QUALIFICAÇÃO
-     ============================================================ -->
+<!-- QUIZ -->
 <section class="stage" id="stageQuiz">
   <div class="wrap">
     <p class="quiz-eyebrow">📱 Renda Extra Pelo Celular</p>
@@ -330,9 +308,7 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- ============================================================
-     ETAPA 1.5 — TRANSIÇÃO / CARREGAMENTO
-     ============================================================ -->
+<!-- CARREGAMENTO -->
 <section class="stage hidden" id="stageLoading">
   <div class="wrap">
     <div class="loading-spinner"></div>
@@ -342,9 +318,7 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- ============================================================
-     ETAPA 2 — VSL + ETAPA 3 — OFERTA (com delay)
-     ============================================================ -->
+<!-- VSL + OFERTA -->
 <section class="stage" id="stageSales">
   <div class="wrap">
     <span class="sales-eyebrow">Assista até o final</span>
@@ -354,14 +328,11 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
       <iframe
         id="vslIframe"
         src="about:blank"
-        data-src="https://www.youtube.com/embed/eEz0yXdHGZo?autoplay=1&controls=0&rel=0&modestbranding=1&disablekb=1&playsinline=1"
+        data-src="https://www.youtube-nocookie.com/embed/eEz0yXdHGZo?autoplay=1&controls=0&rel=0&modestbranding=1&playsinline=1&cc_load_policy=0&iv_load_policy=3"
         title="Vídeo de apresentação"
         allow="autoplay; encrypted-media; picture-in-picture"
         allowfullscreen>
       </iframe>
-      <!-- Camada transparente: bloqueia cliques no player para o usuário não sair do site.
-           O primeiro toque nela apenas inicia a reprodução (necessário em navegadores
-           que bloqueiam autoplay sem interação do usuário); toques seguintes são ignorados. -->
       <div class="video-overlay" id="videoOverlay">
         <span class="play-hint" id="playHint">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M7 4.5v15l13-7.5-13-7.5Z" fill="#04170C"/></svg>
@@ -392,11 +363,9 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-links">
-      <!-- Substitua os href abaixo pelos links reais dos seus documentos quando publicar -->
       <a href="termos-de-uso.html">Termos de Uso</a>
       <a href="politica-de-privacidade.html">Política de Privacidade</a>
     </div>
@@ -409,19 +378,12 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
 (function(){
   "use strict";
 
-  /* ----------------------------------------------------------------------
-     CONFIGURAÇÃO — ÚNICO PONTO DE EDIÇÃO
-     ---------------------------------------------------------------------- */
   var CHECKOUT_URL = "https://pay.cakto.com.br/9wv4sd7_1015912";
-  var OFFER_DELAY_SECONDS = 180; // tempo (em segundos) até a oferta ser liberada após o início do vídeo
+  var OFFER_DELAY_SECONDS = 180;
 
-  /* ---------- Ano no rodapé ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ========================================================================
-     ETAPA 1 — QUIZ
-     ======================================================================== */
   var TOTAL_QUESTIONS = 3;
   var currentQuestion = 1;
   var quizAnswers = {};
@@ -457,9 +419,6 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
     });
   });
 
-  /* ========================================================================
-     TRANSIÇÃO — TELA DE CARREGAMENTO (3s)
-     ======================================================================== */
   function finishQuiz() {
     document.getElementById("stageQuiz").classList.add("hidden");
     var loadingStage = document.getElementById("stageLoading");
@@ -468,7 +427,6 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
 
     var fill = document.getElementById("loadingBarFill");
     var textEl = document.getElementById("loadingText");
-    // força reflow para garantir que a transição de largura rode do 0%
     window.requestAnimationFrame(function () {
       fill.style.width = "100%";
     });
@@ -486,23 +444,17 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
     }, 3000);
   }
 
-  /* ========================================================================
-     ETAPA 2 — VSL (overlay bloqueia cliques; 1º toque apenas inicia o vídeo)
-     ======================================================================== */
   var overlay = document.getElementById("videoOverlay");
   var iframe = document.getElementById("vslIframe");
   var videoStarted = false;
 
   overlay.addEventListener("click", function () {
-    if (videoStarted) return; // toques seguintes não fazem nada — usuário não consegue pausar/sair pelo player
+    if (videoStarted) return;
     videoStarted = true;
     iframe.src = iframe.getAttribute("data-src");
     overlay.classList.add("started");
   });
 
-  /* ========================================================================
-     ETAPA 3 — OFERTA COM DELAY
-     ======================================================================== */
   function startCountdown() {
     var remaining = OFFER_DELAY_SECONDS;
     var countdownEl = document.getElementById("countdown");
@@ -522,9 +474,6 @@ src="https://www.facebook.com/tr?id=1568239834683450&ev=PageView&noscript=1"
     }, 1000);
   }
 
-  /* ========================================================================
-     BOTÃO DE CHECKOUT — dispara InitiateCheckout antes de redirecionar
-     ======================================================================== */
   var checkoutBtn = document.getElementById("checkoutBtn");
   checkoutBtn.setAttribute("href", CHECKOUT_URL);
   checkoutBtn.addEventListener("click", function (e) {
